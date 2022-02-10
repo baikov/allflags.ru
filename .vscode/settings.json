@@ -1,0 +1,42 @@
+{
+    // "python.defaultInterpreterPath": "/Users/sart/Develop/allflags/venv/bin/python",
+    "python.linting.pylintEnabled": true,
+    "editor.formatOnSave": false,
+    // "python.formatting.autopep8Args": ["--max-line-length", "120", "--experimental"],
+    // "python.linting.pylintArgs": [
+    //     "--disable=C0111, C0114, C0115, W0222", // missing docstring
+    //     "--load-plugins=pylint_django,pylint_celery",
+    //     "--disable=imported-auth-user",
+    //     "--disable=invalid-name",
+    //     // "--disable=line-too-long",
+    //     "--disable=django-not-configured",
+    //     "--django-settings-module=conf.settings",
+    // ],
+
+    "python.formatting.provider": "black",
+    // "python.formatting.provider": "autopep8",
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": true,
+
+    "python.linting.flake8Path": "/Users/sart/Develop/allflags/venv/bin/flake8",
+    "python.linting.flake8Args": ["--max-line-length=120", "--ignore=E402,I001",],
+    "python.formatting.blackArgs": ["--line-length", "120"],
+    "editor.rulers": [80,120],
+
+    // "cornflakes.linter.executablePath": "/Users/sart/Develop/allflags/env/bin/flake8",
+    // "cornflakes.linter.run": "onType",
+    "cornflakes.linter.run": "off",
+
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/**/*.html": "jinja-html"
+    },
+    "beautify.language": {
+        "html": [
+            "htm", "html", "jinja-html"
+        ]
+    },
+    "emmet.includeLanguages": {
+        "jinja-html": "html"
+    },
+}
