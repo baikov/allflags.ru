@@ -139,7 +139,6 @@ services:
 
 networks:
   front:
-    external:
-      name: front
+    name: front
   back:
     name: back
